@@ -1,0 +1,27 @@
+---
+version: '3.8' 
+services:
+  mynginx:
+    image: nginx
+    ports:
+      - 8080:80
+    container_name: mynginx    
+  mydb:
+    image: mysql:5
+    environment:
+       MYSQL_ROOT_PASSWORD: chaitanya
+    container_name: mydb
+  mypostgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: chaitanya
+      POSTGRES_USER: myuser
+      POSTGRES_DB: mydb
+    container_name: mypostgres
+  myadminer:
+    image: adminer 
+    ports: 
+      - 7070:8080    
+...
+
+     

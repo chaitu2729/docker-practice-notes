@@ -1,0 +1,4 @@
+FROM ubuntu
+MAINTAINER chaitanya
+
+ADD https://get.jenkins.io/war-stable/2.387.2/jenkins.war /tmp

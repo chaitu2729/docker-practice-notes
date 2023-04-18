@@ -1,0 +1,13 @@
+---
+version: "3.8"
+services:
+  mynginx:
+     image: nginx
+     ports: 
+       - 8080:80
+     container_name: mynginx
+  mydb:
+     image: mysql:5
+     environment:
+        MYSQL_ROOT_PASSWORD: chaitanya        
+...         

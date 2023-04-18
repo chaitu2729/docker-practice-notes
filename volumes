@@ -1,0 +1,6 @@
+FROM centos 
+
+
+
+VOLUME /data 
+

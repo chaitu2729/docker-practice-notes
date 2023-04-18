@@ -1,0 +1,8 @@
+FROM ubuntu
+MAINTAINER chaitanya
+
+
+COPY script.sh /tmp
+
+
+RUN sh /tmp/script.sh 
